@@ -1,11 +1,11 @@
-const footer = () => {
+import "bootstrap/dist/js/bootstrap.js";
+
+const Footer = () => {
   return (
-    <footer className="py-3 bg-danger">
-      <div className="container">
-        <p className="m-0 text-center text-white">Copyright © Abdulkadir Havranlıoğlu</p>
-      </div>
-    </footer>
+    <div className="bg-danger py-3 d-flex align-items-center justify-content-center">
+      <p> Innovation with Style MSI  &nbsp;&copy;</p>
+    </div>
   );
 };
 
-export default footer;
+export default Footer;
