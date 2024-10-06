@@ -2,7 +2,7 @@ import styles from "./card.module.scss";
 
 
 // eslint-disable-next-line react/prop-types
-const Card = ({ icon, title, description }) => {  //Bu satırda parantez içine PROP-erties yazıyoruz,Card neleri içeriyorsa onları ekliyoruz aslında
+const Card = ({ icon, title, description }) => {  //Bu satırda parantez içine PROP-erties yazıyoruz,Card içeriğinde kullanacağımız properties ekliyoruz aslında
   return (
     <div className="col-lg-6 col-xxl-4 mb-5">
       <div className="card bg-light border-0 h-100">

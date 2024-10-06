@@ -1,4 +1,5 @@
 import Card from "../components/Card.jsx";
+import "./sass/features.scss";
 
 const Features = () => {
   return (
@@ -42,7 +43,7 @@ const Features = () => {
           />
           <Card
             icon={"bi-cpu"}
-            title={"ÇOK ÇEKİRDEKLİ MİMARİ YENİDEN KEŞFEDİLDİ"}
+            title={"Multicore produce research again!"}
             description={
               "Katana 17 B12V, en yeni 12.Nesil Intel® Core™ i7 işlemcisinin performans ve verimlilik çekirdekleri ile çok görevli projelerinizde ve performans gerektiren oyunlarda eşi görülmemiş bir güç artışı sunar."
             }

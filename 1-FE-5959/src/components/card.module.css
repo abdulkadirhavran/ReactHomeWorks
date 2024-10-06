@@ -1,0 +1,9 @@
+.cardFormat {
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: -15px;
+}/*# sourceMappingURL=card.module.css.map */
