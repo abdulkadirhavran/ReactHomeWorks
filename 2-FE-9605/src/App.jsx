@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-no-undef */
 import { useState } from "react";
 import "./App.css";
-import styled from "styled-components";
-import { Button, Form } from "react-bootstrap";
+import styled from "styled-components"; //Süslü parantez yoksa varsayılan öğeyi almak için kullanılır.(DEFAULT EXPORT)
+import { Button, Form } from "react-bootstrap"; //react bootstrapten belirli öğeleri almak için süslü parantez kullanılır.(NAMED EXPORT)
 
-const ListItem = styled.li`
+const ListItem = styled.li` //Styled component kullanılış şekli
   cursor: pointer;
   list-style-type: square;
 `;
@@ -14,7 +14,8 @@ function App() {
 
   const [todos, setTodos] = useState([]);
 
-  const addTodo = () => {  // Bu fonksiyonda todo listeye yeni bir eleman eklerken bir önce eklediğimiz elemanları getirip(...todos-> todos içinde ki değerleri yayar.) sonrasında yeni elemanı(todoInput) getiriyoruz.
+  const addTodo = () => {
+    // Bu fonksiyonda todo listeye yeni bir eleman eklerken bir önce eklediğimiz elemanları getirip(...todos-> todos içinde ki değerleri yayar.) sonrasında yeni elemanı(todoInput) getiriyoruz.
     setTodos([...todos, todoInput]);
     setTodoInput(""); // Burada ise input'a girilen değer sonrası input kutucuğunu boş döndürmeye yarar.
   };
@@ -27,7 +28,7 @@ function App() {
             <Form.Label className="mb-3">Target</Form.Label>
           </div>
           <Form.Control
-            value={todoInput} // Burada input kutucuğuna  value(değer) olarak todoInput veriyoruz ki setTodoInput çalışsın.
+            value={todoInput} // Burada input kutucuğuna value(değer) olarak todoInput veriyoruz ki setTodoInput çalışsın.
             onChange={(e) => {
               setTodoInput(e.target.value);
             }}
